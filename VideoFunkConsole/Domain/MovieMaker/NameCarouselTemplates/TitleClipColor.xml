@@ -1,0 +1,5 @@
+﻿<BoundPropertyFloatSet Name="color">
+  <BoundPropertyFloatElement Value="{color.R}" />
+  <BoundPropertyFloatElement Value="{color.G}" />
+  <BoundPropertyFloatElement Value="{color.B}" />
+</BoundPropertyFloatSet>

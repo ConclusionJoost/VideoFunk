@@ -1,0 +1,46 @@
+﻿<TitleClip extentID="{TitleClip.extentID}" gapBefore="{TitleClip.gapBefore}" duration="{TitleClip.duration}">
+      <Effects>
+        <TextEffect effectTemplateID="{TitleClip.effectTemplateID}" TextScriptId="9">
+          <BoundProperties>
+            <BoundPropertyBool Name="automatic" Value="false" />
+            {TitleClip.Color}
+            <BoundPropertyStringSet Name="family">
+              <BoundPropertyStringElement Value="{TitleClip.family}" />
+            </BoundPropertyStringSet>
+            <BoundPropertyBool Name="horizontal" Value="true" />
+            <BoundPropertyStringSet Name="justify">
+              <BoundPropertyStringElement Value="MIDDLE" />
+            </BoundPropertyStringSet>
+            <BoundPropertyBool Name="leftToRight" Value="true" />
+            <BoundPropertyFloatSet Name="length" />
+            <BoundPropertyFloat Name="maxExtent" Value="1" />
+            <BoundPropertyFloatSet Name="outlineColor">
+              <BoundPropertyFloatElement Value="1" />
+              <BoundPropertyFloatElement Value="1" />
+              <BoundPropertyFloatElement Value="1" />
+            </BoundPropertyFloatSet>
+            <BoundPropertyInt Name="outlineSizeIndex" Value="0" />
+            <BoundPropertyFloatSet Name="position">
+              <BoundPropertyFloatElement Value="0" />
+              <BoundPropertyFloatElement Value="1.7" />
+              <BoundPropertyFloatElement Value="0.025" />
+            </BoundPropertyFloatSet>
+            <BoundPropertyFloat Name="size" Value="{TitleClip.size}" />
+            <BoundPropertyStringSet Name="string">
+              {TitleClip.textValue}
+            </BoundPropertyStringSet>
+            <BoundPropertyString Name="style" Value="{TitleClip.style}" />
+            <BoundPropertyFloat Name="transparency" Value="0" />
+          </BoundProperties>
+        </TextEffect>
+      </Effects>
+      <Transitions />
+      <BoundProperties>
+        <BoundPropertyFloatSet Name="diffuseColor">
+          <BoundPropertyFloatElement Value="0.75" />
+          <BoundPropertyFloatElement Value="1" />
+          <BoundPropertyFloatElement Value="0" />
+        </BoundPropertyFloatSet>
+        <BoundPropertyFloat Name="transparency" Value="1" />
+      </BoundProperties>
+    </TitleClip>
