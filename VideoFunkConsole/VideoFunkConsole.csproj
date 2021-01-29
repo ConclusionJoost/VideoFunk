@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="log4net" Version="2.0.10" />
     <PackageReference Include="System.IO.Abstractions" Version="8.0.3" />
     <PackageReference Include="TrafficJam.Lib" Version="3.3.20005" />
   </ItemGroup>
