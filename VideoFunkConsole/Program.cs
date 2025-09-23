@@ -7,12 +7,11 @@ using System.Reflection;
 using System.Text;
 using VideoFunkConsole.Domain;
 using VideoFunkConsole.Domain.MovieMaker;
-using VideoFunkConsole.Interfaces;
 using VideoFunkConsole.Module;
 
 namespace VideoFunkConsole
 {
-    class Program
+    static class Program
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -34,8 +33,6 @@ namespace VideoFunkConsole
 
             try
             {
-                var startupArguments = StartupArguments.Parse(args);
-
                 var fileSystem = new FileSystem();
                 var names = fileSystem.File.ReadAllLines(".\\data\\names.txt");
 
@@ -46,7 +43,7 @@ namespace VideoFunkConsole
                     OutputFilePath = "d:\\temp\\myfilename.wlmp"
                 };
 
-                INameCarousel nameCarouselModule = new NameCarouselModule(new NameCarouselGenerator(fileSystem));
+                var nameCarouselModule = new NameCarouselModule(new NameCarouselGenerator(fileSystem));
                 nameCarouselModule.Init(settings);
                 nameCarouselModule.Generate();
             }
