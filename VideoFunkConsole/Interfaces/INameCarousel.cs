@@ -1,10 +1,9 @@
-﻿using TrafficJam.Lib.Interfaces;
-using VideoFunkConsole.Module;
+﻿using VideoFunkConsole.Module;
 
-namespace VideoFunkConsole.Interfaces
+namespace VideoFunkConsole.Interfaces;
+
+public interface INameCarousel
 {
-    public interface INameCarousel : IInit<ConfigSettings>
-    {
-        void Generate();
-    }
+    void Init(ConfigSettings config);
+    void Generate();
 }

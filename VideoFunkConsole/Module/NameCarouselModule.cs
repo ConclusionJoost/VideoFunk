@@ -6,18 +6,13 @@ namespace VideoFunkConsole.Module
     {
     }
 
-    public class NameCarouselModule : INameCarouselModule
+    public class NameCarouselModule(INameCarousel nameCarousel) : INameCarouselModule
     {
-        private readonly INameCarousel nameCarouselImplementation;
+        private readonly INameCarousel nameCarouselImplementation = nameCarousel;
 
-        public NameCarouselModule(INameCarousel nameCarousel)
+        public void Init(ConfigSettings config)
         {
-            nameCarouselImplementation = nameCarousel;
-        }
-
-        public void Init(ConfigSettings t)
-        {
-            nameCarouselImplementation.Init(t);
+            nameCarouselImplementation.Init(config);
         }
 
         public void Generate()
